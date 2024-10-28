@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class DailyUpdatedSection extends StatelessWidget {
+class DailyUpdatedItem extends StatelessWidget {
   final Gradient color;
   final IconData icon;
   final String title;
 
-  const DailyUpdatedSection({super.key, required this.color, required this.icon, required this.title});
+  const DailyUpdatedItem({super.key, required this.color, required this.icon, required this.title});
 
   @override
   Widget build(BuildContext context) {
