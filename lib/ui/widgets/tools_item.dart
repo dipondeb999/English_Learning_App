@@ -11,7 +11,7 @@ class ToolsItem extends StatelessWidget {
     return Column(
       children: [
         Container(
-          padding: const EdgeInsets.all(15),
+          padding: const EdgeInsets.all(10),
           margin: const EdgeInsets.all(5),
           decoration: BoxDecoration(
             color: Colors.white,
@@ -35,7 +35,7 @@ class ToolsItem extends StatelessWidget {
           title,
           style: const TextStyle(
             color: Colors.black,
-            fontSize: 16,
+            fontSize: 14,
             fontWeight: FontWeight.bold,
           ),
         )
