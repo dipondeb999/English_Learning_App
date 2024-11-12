@@ -2,6 +2,7 @@ import 'package:english_learning_app/ui/screens/govt_exam_screen.dart';
 import 'package:english_learning_app/ui/screens/spoken_screen.dart';
 import 'package:english_learning_app/ui/screens/video_screen.dart';
 import 'package:english_learning_app/ui/utils/app_color.dart';
+import 'package:english_learning_app/ui/widgets/my_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:badges/badges.dart' as badges;
 
@@ -23,16 +24,12 @@ class _MainBottomNavBarState extends State<MainBottomNavBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: const MyDrawer(),
       appBar: AppBar(
-        backgroundColor: AppColor.primaryColor,
-        leading: IconButton(
-          onPressed: () {},
-          icon: const Icon(
-            Icons.sort,
-            color: Colors.white,
-            size: 35,
-          ),
+        iconTheme: const IconThemeData(
+          color: Colors.white,
         ),
+        backgroundColor: AppColor.primaryColor,
         title: const Text(
           'EnglishLearning',
           style: TextStyle(

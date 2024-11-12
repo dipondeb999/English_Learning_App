@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 
-class MustStudyItem extends StatelessWidget {
+class SpokenOtherStudyItem extends StatelessWidget {
   final IconData icon;
   final Color iconColor;
   final String title;
-  const MustStudyItem({super.key, required this.icon, required this.title, required this.iconColor});
+  const SpokenOtherStudyItem({super.key, required this.icon, required this.iconColor, required this.title});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.all(5),
-      width: 170,
+      width: 160,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(8),
@@ -24,16 +23,16 @@ class MustStudyItem extends StatelessWidget {
       ),
       child: ListTile(
         leading: Icon(
-            icon,
+          icon,
           color: iconColor,
-          size: 35,
+          size: 25,
         ),
         title: Text(
           title,
           textAlign: TextAlign.left,
           style: const TextStyle(
             color: Colors.black,
-            fontSize: 16,
+            fontSize: 12,
             fontWeight: FontWeight.bold,
           ),
         ),

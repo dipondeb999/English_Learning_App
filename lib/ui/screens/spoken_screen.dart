@@ -1,7 +1,7 @@
 import 'package:english_learning_app/ui/utils/app_color.dart';
 import 'package:english_learning_app/ui/widgets/daily_updated_item.dart';
-import 'package:english_learning_app/ui/widgets/must_study_item.dart';
-import 'package:english_learning_app/ui/widgets/other_study_item.dart';
+import 'package:english_learning_app/ui/widgets/spoken_must_study_item.dart';
+import 'package:english_learning_app/ui/widgets/spoken_other_study_item.dart';
 import 'package:english_learning_app/ui/widgets/tools_item.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -169,19 +169,19 @@ class _SpokenScreenState extends State<SpokenScreen> {
         padding: EdgeInsets.symmetric(horizontal: 12),
         child: Row(
           children: [
-            MustStudyItem(
+            SpokenMustStudyItem(
               icon: Icons.picture_as_pdf,
               iconColor: Colors.red,
               title: 'PDF Courses',
             ),
             SizedBox(width: 10),
-            MustStudyItem(
+            SpokenMustStudyItem(
               icon: Icons.description,
               iconColor: Colors.blue,
               title: 'Daily Use Sentence',
             ),
             SizedBox(width: 10),
-            MustStudyItem(
+            SpokenMustStudyItem(
               icon: Icons.book,
               iconColor: Colors.green,
               title: 'Practice Exercise',
@@ -277,13 +277,13 @@ class _SpokenScreenState extends State<SpokenScreen> {
         children: [
           Row(
             children: [
-              OtherStudyItem(
+              SpokenOtherStudyItem(
                 icon: Icons.my_library_books_rounded,
                 iconColor: Colors.blue,
                 title: 'Grammar',
               ),
               SizedBox(width: 10),
-              OtherStudyItem(
+              SpokenOtherStudyItem(
                 icon: Icons.collections_bookmark_rounded,
                 iconColor: Colors.red,
                 title: 'Vocabulary',
@@ -293,13 +293,13 @@ class _SpokenScreenState extends State<SpokenScreen> {
           SizedBox(height: 10),
           Row(
             children: [
-              OtherStudyItem(
+              SpokenOtherStudyItem(
                 icon: Icons.bookmarks,
                 iconColor: Colors.amber,
                 title: 'Phrases',
               ),
               SizedBox(width: 10),
-              OtherStudyItem(
+              SpokenOtherStudyItem(
                 icon: Icons.settings_voice_rounded,
                 iconColor: Colors.green,
                 title: 'Conversation',
