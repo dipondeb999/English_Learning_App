@@ -48,30 +48,32 @@ class GovtExamScreen extends StatelessWidget {
   }
 
   Widget _buildDailyUpdatedItems() {
-    return const SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20),
-        child: Row(
-          children: [
-            DailyUpdatesItem(
-              icon: Icons.camera_alt,
-              iconColor: Colors.blue,
-              title: 'Daily Test',
-            ),
-            SizedBox(width: 10),
-            DailyUpdatesItem(
-              icon: Icons.my_library_books_rounded,
-              iconColor: Colors.amber,
-              title: 'Exam Target Question',
-            ),
-            SizedBox(width: 10),
-            DailyUpdatesItem(
-              icon: Icons.question_answer_rounded,
-              iconColor: Colors.greenAccent,
-              title: 'Previous Asked Question',
-            ),
-          ],
+    return const Center(
+      child: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 20),
+          child: Row(
+            children: [
+              DailyUpdatesItem(
+                icon: Icons.camera_alt,
+                iconColor: Colors.blue,
+                title: 'Daily Test',
+              ),
+              SizedBox(width: 10),
+              DailyUpdatesItem(
+                icon: Icons.my_library_books_rounded,
+                iconColor: Colors.amber,
+                title: 'Exam Target Question',
+              ),
+              SizedBox(width: 10),
+              DailyUpdatesItem(
+                icon: Icons.question_answer_rounded,
+                iconColor: Colors.greenAccent,
+                title: 'Previous Asked Question',
+              ),
+            ],
+          ),
         ),
       ),
     );
@@ -99,47 +101,49 @@ class GovtExamScreen extends StatelessWidget {
   }
 
   Widget _buildMustStudyItems() {
-    return const SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 12),
-        child: Row(
-          children: [
-            GovtMustStudyItem(
-              title: 'NOTES HINDI',
-              icon: Icons.event_note_sharp,
-              color: LinearGradient(
-                colors: [
-                  Colors.blueAccent,
-                  Colors.blue,
-                ],
+    return const Center(
+      child: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 12),
+          child: Row(
+            children: [
+              GovtMustStudyItem(
+                title: 'NOTES HINDI',
+                icon: Icons.event_note_sharp,
+                color: LinearGradient(
+                  colors: [
+                    Colors.blueAccent,
+                    Colors.blue,
+                  ],
+                ),
               ),
-            ),
-            SizedBox(width: 10),
-            GovtMustStudyItem(
-              title: 'NOTES ENGLISH',
-              icon: Icons.note_add_sharp,
-              color: LinearGradient(
-                end: Alignment(1, 3),
-                colors: [
-                  Colors.amberAccent,
-                  Colors.red,
-                ],
+              SizedBox(width: 10),
+              GovtMustStudyItem(
+                title: 'NOTES ENGLISH',
+                icon: Icons.note_add_sharp,
+                color: LinearGradient(
+                  end: Alignment(1, 3),
+                  colors: [
+                    Colors.amberAccent,
+                    Colors.red,
+                  ],
+                ),
               ),
-            ),
-            SizedBox(width: 10),
-            GovtMustStudyItem(
-              title: 'MCQ TEST',
-              icon: Icons.note_alt_sharp,
-              color: LinearGradient(
-                end: Alignment(2, 0),
-                colors: [
-                  Colors.greenAccent,
-                  Colors.green,
-                ],
+              SizedBox(width: 10),
+              GovtMustStudyItem(
+                title: 'MCQ TEST',
+                icon: Icons.note_alt_sharp,
+                color: LinearGradient(
+                  end: Alignment(2, 0),
+                  colors: [
+                    Colors.greenAccent,
+                    Colors.green,
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

@@ -214,36 +214,38 @@ class _SpokenScreenState extends State<SpokenScreen> {
   }
 
   Widget _buildToolItems() {
-    return const SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 12),
-        child: Row(
-          children: [
-            ToolsItem(
-              icon: Icons.g_translate_rounded,
-              iconColor: Colors.blue,
-              title: 'Translator',
-            ),
-            SizedBox(width: 15),
-            ToolsItem(
-              icon: Icons.library_books,
-              iconColor: Colors.red,
-              title: 'Dictionary',
-            ),
-            SizedBox(width: 15),
-            ToolsItem(
-              icon: Icons.record_voice_over,
-              iconColor: Colors.amber,
-              title: 'Pronunciation',
-            ),
-            SizedBox(width: 15),
-            ToolsItem(
-              icon: Icons.gamepad,
-              iconColor: Colors.green,
-              title: 'Game',
-            ),
-          ],
+    return const Center(
+      child: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 12),
+          child: Row(
+            children: [
+              ToolsItem(
+                icon: Icons.g_translate_rounded,
+                iconColor: Colors.blue,
+                title: 'Translator',
+              ),
+              SizedBox(width: 15),
+              ToolsItem(
+                icon: Icons.library_books,
+                iconColor: Colors.red,
+                title: 'Dictionary',
+              ),
+              SizedBox(width: 15),
+              ToolsItem(
+                icon: Icons.record_voice_over,
+                iconColor: Colors.amber,
+                title: 'Pronunciation',
+              ),
+              SizedBox(width: 15),
+              ToolsItem(
+                icon: Icons.gamepad,
+                iconColor: Colors.green,
+                title: 'Game',
+              ),
+            ],
+          ),
         ),
       ),
     );
@@ -276,6 +278,8 @@ class _SpokenScreenState extends State<SpokenScreen> {
       child: Column(
         children: [
           Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SpokenOtherStudyItem(
                 icon: Icons.my_library_books_rounded,
@@ -292,6 +296,8 @@ class _SpokenScreenState extends State<SpokenScreen> {
           ),
           SizedBox(height: 10),
           Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SpokenOtherStudyItem(
                 icon: Icons.bookmarks,

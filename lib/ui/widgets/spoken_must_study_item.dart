@@ -10,7 +10,7 @@ class SpokenMustStudyItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.all(5),
-      width: 170,
+      width: 190,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(8),
