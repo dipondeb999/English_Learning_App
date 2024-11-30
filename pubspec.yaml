@@ -30,6 +30,7 @@ flutter:
   assets:
      - assets/images/
      - assets/images/profile.png
+     - assets\images\flutter_logo.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
